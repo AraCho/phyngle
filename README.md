@@ -31,9 +31,9 @@ Adjusting __Phyngle.cfg__ can change the belows.
   cd ./Phyngle/
   bash run_Phyngle.sh [directory for tumor] [directory for normal] [.bed file for CNV segments] [base name]
   ```
-  * __[directory for tumor]__: path to directory which aligned bam files of __tumor__ single cells are in.
+  * __[directory for tumor]__: path to directory which aligned bam files of __tumor__ single cells are in. GBM data in https://www.ebi.ac.uk/ega/studies/EGAS00001002185 is used as examples in the journal.
     
-  * __[directory for normal]__: path to directory which aligned bam files of __normal__ control single cells are in.  
+  * __[directory for normal]__: path to directory which aligned bam files of __normal__ control single cells are in. Transcriptomes from normal brain ( https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67835 ) was used as an examples for the journal 
    
   * __[.bed file for CNV segments]__: tab-delimited bed file of CNV segments from exom sequencing.
   
