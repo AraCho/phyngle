@@ -43,7 +43,7 @@ Adjusting __Phyngle.cfg__ can change the belows.
       
       __Note: the 4th column of the file must have the exact same format with that of below.
         __ (__Amp__:amplification, __Del__:deletion)
-    * example
+    * example (SF10281c.cnv.merged_gt1500000_20percent.bed)
   ```
   7   19533   157408385   7:19533:157408385:Amp
   9   19116859    32405639    9:19116859:32405639:Del
