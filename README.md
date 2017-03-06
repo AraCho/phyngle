@@ -100,7 +100,7 @@ cluster_6  F8,B1
 ```
 
 ## <a id="CX_Net"></a> Generating co-expression network
-Co-expression network could be constructed by the correlations of expressions in single cells.
+Co-expression network could be constructed by the correlations of expressions in single cells. First, Phygle calculate SCDE(http://hms-dbmi.github.io/scde/)-adjusted expressional correlations between genes. Then, the network which is constituted of top-correlated genes with the user-supplied target genes will be constructed.  
   
 
 ### Requirement
