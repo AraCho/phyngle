@@ -175,7 +175,7 @@ __Compare_[window_size].pdf__ (Box plot) would be generated in __output_[base na
 
 
 ## <a id="10x"></a> False discovery rate estimation: 10x Cross validation
-The FDR could be estimated by 10x cross validation
+Phyngle could estimate false discovery rate (FDR) by 10x cross validation. In cross validation, false positive CNV calls are derived from the [normal brai;n controls](https://www.ebi.ac.uk/ega/studies/EGAS00001002185) which randomly selected 10% were used as the test sets and the remaining 90% were used for training.
 
 ### Requirement
   * beanplot (R package)
@@ -197,9 +197,9 @@ Adjusting __10X_cross_validation.cfg__ can change the belows.
   * __[directory for test]__: path to directory which aligned bam files of __testing__ for FDR estimation
    
   * __[.bed file for CNV segments], [base name]__ : same as above.
-
+;
 ### Output
-Box plot of FDRs would be generated (__[base name]_boxplot.pdf__) in  __output_[base name]__ directories.
+Box plot of 10 FDRs resulting from each pooled sample would be generated (__[base name]_boxplot.pdf__) in  __output_[base name]__ directories.
 ![10X](images/10X_boxplot.jpg?raw=true "10Xval_Test" )
 
 ## <a id="Empirical"></a> False discovery rate estimation: Empirical testing
