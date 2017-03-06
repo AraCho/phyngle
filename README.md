@@ -175,7 +175,7 @@ __Compare_[window_size].pdf__ (Box plot) would be generated in __output_[base na
 
 
 ## <a id="10x"></a> False discovery rate estimation: 10x Cross validation
-Phyngle could estimate false discovery rate (FDR) by 10x cross validation. In cross validation, false positive CNV calls are derived from the [normal brai;n controls](https://www.ebi.ac.uk/ega/studies/EGAS00001002185) which randomly selected 10% were used as the test sets and the remaining 90% were used for training.
+Phyngle could estimate false discovery rate (FDR) by 10x cross validation. In cross validation, false positive CNV calls are derived from the [normal brain controls](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67835) which randomly selected 10% were used as the test sets and the remaining 90% were used for training.
 
 ### Requirement
   * beanplot (R package)
@@ -203,7 +203,7 @@ Box plot of 10 FDRs resulting from each pooled sample would be generated (__[bas
 ![10X](images/10X_boxplot.jpg?raw=true "10Xval_Test" )
 
 ## <a id="Empirical"></a> False discovery rate estimation: Empirical testing
-The FDR could be estimated by empirical testing
+The FDR could be estimated by empirical testing. The number of false positive CNV calls was calculated from non-malignant [fetal brain dataset](http://dx.doi.org/10.1016/j.cell.2015.09.004) which are independent on the [training set](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67835)
 
 ### Requirement
   * beanplot (R package)
