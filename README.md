@@ -139,7 +139,8 @@ The directory __output_[base name]__ would be generated and all the output files
 
 
 ## <a id="Corr"></a> Correlation of scRNA-seq and exome-Seq
-The correlation between Exome-seq and single-cell RNA-seq could be assessed. 
+The correlation between Exome-seq and single-cell RNA-seq could be assessed. Briefly, the read counts resulting from the single-cell sequencing are compared to those from the exome-seq from the same patients.  
+
 ### Requirement
   * zoo (R package)
   
