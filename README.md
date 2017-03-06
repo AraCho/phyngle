@@ -11,6 +11,8 @@ PHYlogenies and co-expression networks for siNGLE cell data
 
 
 ## <a id="Calling_CNV"></a> Calling presence/absence of CNVs
+Phyngle made CNV presence/absence calls for individual cells by comparing the distribution of expression from single-cell RNA-seq in tumor and normal-brain control. 
+
 ### Requirement
   * Linux/Unix environment (Python/Perl)
   * beanplot (R package)
@@ -18,7 +20,7 @@ PHYlogenies and co-expression networks for siNGLE cell data
   * bedtools  
 
 ### Config file
-Adjusting __GoodMethod.cfg__ can change the belows.
+Adjusting __Phyngle.cfg__ can change the belows.
   * Path to python/samtools/bedtools/Rscript
   * The threshold of mapping-qualities/read-count for alignment files
   * FDR for CNV calling
@@ -26,8 +28,8 @@ Adjusting __GoodMethod.cfg__ can change the belows.
 ### Running
 
   ```
-  cd ./GoodMethod/
-  bash run_GoodMethod.sh [directory for tumor] [directory for normal] [.bed file for CNV segments] [base name]
+  cd ./Phyngle/
+  bash run_Phyngle.sh [directory for tumor] [directory for normal] [.bed file for CNV segments] [base name]
   ```
   * __[directory for tumor]__: path to directory which aligned bam files of __tumor__ single cells are in.
     
